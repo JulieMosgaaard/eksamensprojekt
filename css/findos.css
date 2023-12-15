@@ -14,7 +14,7 @@
     padding: 20px 1px;
     margin: 0; 
     width: 100%;
-    z-index: 999;
+    z-index: 1;
   }
   
   /* Styling af links */
@@ -56,6 +56,14 @@
   .header-right {
     float: right;
   }
+
+
+  /* baggrundsfarve */
+  body {
+    background-color: #afd9f5;
+    overflow-y: scroll;
+  }
+
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
   @media screen and (max-width: 900px) {
@@ -79,6 +87,12 @@
 
 
 
+  .flex-container img {
+    width: 50%;
+  
+}
+    
+
 
 
 
@@ -86,7 +100,6 @@
   
   /* start footer*/
 .footer{
-  position:fixed;
   background:#2786c8;
   padding:30px 0px;
   font-family: 'Play', sans-serif;

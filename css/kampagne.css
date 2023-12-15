@@ -1,142 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Noticia Text', serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Noticia Text', serif;
+}
+
+/* Style header med blå baggrund og med padding */
+.header {
+
+    overflow: hidden;
+    background-color: #2786c8;
+    padding: 20px 1px;
+    margin: 0; 
+    width: 100%;
+    z-index: 1;
   }
   
-  /* Style header med blå baggrund og med padding */
-  .header {
-      position: fixed;
-      overflow: hidden;
-      background-color: #2786c8;
-      padding: 20px 1px;
-      margin: 0; 
-      width: 100%;
-    }
-    
-    /* Styling af links */
-    .header a {
-      float: left;
-      color: #ffff;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px; 
-      line-height: 25px;
-      border-radius: 40px;
-      margin: 53px 50px;
-    }
-    
-    /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-    .logo {
-      width: 200px; /* Juster bredden efter dit logo's størrelse */
-      height: 100px; /* Juster højden efter dit logo's størrelse */
-      background: none;
-      position: absolute;
-      transform: translate(100%, -50%);
-      z-index: 1;
-      
-      
-    }
-    
-    /*  mus */
-    .header a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    /* Styling af active links*/
-    .header a.active {
-      background-color: #1b3e60;
-      color: white;
-    }
-    
-    /* placering til højre */
-    .header-right {
-      float: right;
-    }
-    
-    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
-    @media screen and (max-width: 900px) {
-      .header a {
-        float: none;
-        display: block;
-        text-align: center;
-      }
-      .header-right {
-        float: none;
-      }
-  
-    }
-  
-    @media screen and (max-width: 900px) { 
-      .logo { 
-        display: none; 
-      } 
-    }
-  
-    
-    /* start footer*/
-  .footer{
-    position: fixed;
-    background:#2786c8;
-    padding:30px 0px;
-    font-family: 'Play', sans-serif;
-    text-align:center;
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    }
-    
-    .footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color: #0c3e63;
-    font-size:0.8em;
-    }
-    
-    .footer .row a{
-    text-decoration:none;
+  /* Styling af links */
+  .header a {
+    float: left;
     color: #ffff;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#0c3e63;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 40px;
+    margin: 53px 50px;
+  }
   
-    /* Responsive footer */
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    }
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .logo {
+    width: 200px; /* Juster bredden efter dit logo's størrelse */
+    height: 100px; /* Juster højden efter dit logo's størrelse */
+    background: none;
+position: absolute;
+    transform: translate(100%, -50%);
+    z-index: 2;
+    
+    
+  }
   
-    /* slut footer*/
+  /*  mus */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Styling af active links*/
+  .header a.active {
+    background-color: #1b3e60;
+    color: white;
+  }
+  
+  /* placering til højre */
+  .header-right {
+    float: right;
+  }
+
+
+
+/* baggrundsfarve */
+body {
+background-color: #afd9f5;
+overflow-y: scroll;
+}
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+  
+   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+   @media screen and (max-width: 900px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .header-right {
+      float: none;
+    }
+
+  }
+
+  @media screen and (max-width: 900px) { 
+    .logo { 
+      display: none; 
+    } 
+  }
+
+  
+  /* start footer*/
+.footer{
+  margin-top: auto;
+  background:#2786c8;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color: #0c3e63;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color: #ffff;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#0c3e63;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+
+  /* Responsive footer */
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+  /* slut footer*/
