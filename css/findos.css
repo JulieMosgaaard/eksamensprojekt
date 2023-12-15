@@ -58,12 +58,6 @@
   }
 
 
-  /* baggrundsfarve */
-  body {
-    background-color: #afd9f5;
-    overflow-y: scroll;
-  }
-
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
   @media screen and (max-width: 900px) {
@@ -84,80 +78,79 @@
     } 
   }
 
-
+    /* baggrundsfarve */
+    body {
+      background-color: #afd9f5;
+    }
 
 
   .flex-container img {
-    width: 50%;
-  
+    max-width: 100%;
+    margin-top: 220px;
 }
     
 
 
-
-
-
   
-  /* start footer*/
-.footer{
-  background:#2786c8;
-  padding:30px 0px;
-  font-family: 'Play', sans-serif;
-  text-align:center;
-  bottom: 0; 
-  left: 0; 
-  width: 100%; 
-  }
-  
-  .footer .row{
-  width:100%;
-  margin:1% 0%;
-  padding:0.6% 0%;
-  color: #0c3e63;
-  font-size:0.8em;
-  }
-  
-  .footer .row a{
-  text-decoration:none;
-  color: #ffff;
-  transition:0.5s;
-  }
-  
-  .footer .row a:hover{
-  color:#0c3e63;
-  }
-  
-  .footer .row ul{
-  width:100%;
-  }
-  
-  .footer .row ul li{
-  display:inline-block;
-  margin:0px 30px;
-  }
-  
-  .footer .row a i{
-  font-size:2em;
-  margin:0% 1%;
-  }
-  
-
-  /* Responsive footer */
-  @media (max-width:720px){
-  .footer{
-  text-align:left;
-  padding:5%;
-  }
-  .footer .row ul li{
-  display:block;
-  margin:10px 0px;
-  text-align:left;
-  }
-  .footer .row a i{
-  margin:0% 3%;
-  }
-  }
-
-  /* slut footer*/
-  
+   /* start footer*/
+   .footer{
+    margin-top: auto;
+    background:#2786c8;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    }
     
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color: #0c3e63;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color: #ffff;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#0c3e63;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+  
+    /* Responsive footer */
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+  
+    /* slut footer*/

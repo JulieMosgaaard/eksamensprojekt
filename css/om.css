@@ -67,7 +67,7 @@ body {
   overflow-y: scroll;
 }
 
-/*tekst 1*/
+/*tekst*/
 .box1{
   position: relative;
   color: black;
@@ -77,12 +77,12 @@ body {
   align-items: center;
   height: 1vh;
   padding: 30%;
-  margin-bottom: 50px;
+  margin-top: -1px;
 }
 
 /* mellemrum mellem overskift og brødtekst*/
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: -1px;
 }
 
 /*3 kapsler styling*/
@@ -90,6 +90,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0px;
+
 }
 
 /* 3 kapsler billeder*/
@@ -97,20 +99,11 @@ h1 {
   width: 100px; /* Brug den ønskede bredde */
   height: 100px; /* Brug den ønskede højde */
   object-fit: cover; /* For at sikre, at billedet passer inden for det definerede område uden at miste proportioner */
-  padding: 5vh;
+  padding: 4vh;
+  margin-top: 0px;
 } 
 
-/*tekst 2*/
-.box2{
-  position: relative;
-  color: black;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  height: 1%;
-  padding: 30%;
-  margin-bottom: 50px;
-}
+
 
 
 
