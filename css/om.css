@@ -80,10 +80,6 @@ body {
   margin-top: -1px;
 }
 
-/* mellemrum mellem overskift og brødtekst*/
-h1 {
-  margin-bottom: -1px;
-}
 
 /*3 kapsler styling*/
 .flex-container {
@@ -99,7 +95,7 @@ h1 {
   width: 100px; /* Brug den ønskede bredde */
   height: 100px; /* Brug den ønskede højde */
   object-fit: cover; /* For at sikre, at billedet passer inden for det definerede område uden at miste proportioner */
-  padding: 4vh;
+  padding: 10vh;
   margin-top: 0px;
 } 
 

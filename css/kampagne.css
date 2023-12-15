@@ -82,6 +82,13 @@ overflow-y: scroll;
   content: "";
   clear: both;
   display: table;
+  width: 40%;
+}
+
+.column .img{
+transform: scale(0.5);
+
+
 }
 
 
