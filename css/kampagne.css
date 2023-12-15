@@ -8,7 +8,6 @@
 
 /* Style header med blå baggrund og med padding */
 .header {
-
     overflow: hidden;
     background-color: #2786c8;
     padding: 20px 1px;
@@ -32,14 +31,12 @@
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
   .logo {
-    width: 200px; /* Juster bredden efter dit logo's størrelse */
+    width: 500px; /* Juster bredden efter dit logo's størrelse */
     height: 100px; /* Juster højden efter dit logo's størrelse */
     background: none;
-position: absolute;
-    transform: translate(100%, -50%);
+    position: absolute;
+    transform: translate(40%, -50%);
     z-index: 2;
-    
-    
   }
   
   /*  mus */
@@ -67,31 +64,38 @@ background-color: #afd9f5;
 overflow-y: scroll;
 }
 
-
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* tekst*/
 .column {
-  float: left;
-  width: 30%;
-  padding: 10px;
-  margin-top: 120px;
+
+  display: flex; margin-top: 120px; 
+  display: flex; margin-top: 120px; 
+  margin-left: 100px;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  width: 40%;
-}
-
-.column .img{
-transform: scale(0.5);
-
-
+/*infografic*/
+img {
+  width: 50%; /* Gør billederne 50% af containerens bredde */
 }
 
 
+
+
+
+/*3 instagram billeder styling*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+/* 3 instagram billeder*/
+.flex-container img {
+  width: 50%; /* Brug den ønskede bredde */
+  height: 50%; /* Brug den ønskede højde */
+  padding: 30%;
+
+} 
 
 
 
